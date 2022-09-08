@@ -4,10 +4,11 @@ import './App.css'
 
 function App() {
 
-  const [quote, setQuote] = useState([]);
-
+  const [quotes, setQuotes] = useState([]);
+  const [isLoading, setLoading] = useState(true);
+  
   useEffect(()=>{
-
+  
   });
 
   return (
