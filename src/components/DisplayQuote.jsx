@@ -8,13 +8,17 @@ const DisplayQuote = ({quotes, isLoading}) => {
 
     useEffect(() => {
       const getRandomQuote = randomQuote();
-      setQuote({...quote, ...getRandomQuote});
+      setQuote({...quote, ...getRandomQuote});      
     },[quotes]);
 
     const nextRandomQuote = () => {
       const getRandomQuote = randomQuote();
       setQuote({...quote, ...getRandomQuote});
     }
+
+    const shareTweet = () => {
+      document.getElementById('tweet-quote').setAttribute('href','https://twitter.com/intent/tweet?hashtags=quotes&text='+encodeURIComponent('"'+quote.text+'" - '+quote.author))
+    } 
 
     return isLoading ? <h1> Loading... </h1> : 
       <>
@@ -23,7 +27,8 @@ const DisplayQuote = ({quotes, isLoading}) => {
           <cite id="author">{quote.author}</cite>
         </blockquote>
         <button onClick={nextRandomQuote} id="new-quote"> Next </button>
-        <a href="#" id="tweet-quote" target="_blank" > <img src={TwitterLogo} alt="twitter logo" /> </a>        
+        <a onClick={shareTweet} id="tweet-quote" target="_top" title="Tweet this quote!" className="share"> <img src={TwitterLogo} alt="Twitter Logo" /></a>
+        
       </>
 }
 export default DisplayQuote;
