@@ -1,4 +1,5 @@
 import React,{useEffect, useState} from "react";
+import TwitterLogo from './../assets/twitterLogo.svg';
 const DisplayQuote = ({quotes, isLoading}) => {
 
     const randomQuote = () => quotes[(Math.floor(Math.random() * quotes.length) + 1)];
@@ -22,7 +23,7 @@ const DisplayQuote = ({quotes, isLoading}) => {
           <cite id="author">{quote.author}</cite>
         </blockquote>
         <button onClick={nextRandomQuote} id="new-quote"> Next </button>
-        <a href="#" id="tweet-quote"> </a>
+        <a href="#" id="tweet-quote" target="_blank" > <img src={TwitterLogo} alt="twitter logo" /> </a>        
       </>
 }
 export default DisplayQuote;
