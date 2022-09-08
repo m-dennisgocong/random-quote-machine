@@ -1,21 +1,21 @@
 import React,{useEffect, useState} from "react";
-const DisplayQuote = (props) => {
+const DisplayQuote = ({quotes, isLoading}) => {
 
-    const randomQuote = () => props.quotes[(Math.floor(Math.random() * props.quotes.length) + 1)];
-    
+    const randomQuote = () => quotes[(Math.floor(Math.random() * quotes.length) + 1)];
+
     const [quote,setQuote] = useState({quote : "", author : ""});
 
     useEffect(() => {
       const getRandomQuote = randomQuote();
       setQuote({...quote, ...getRandomQuote});
-    },[props.quotes]);
+    },[quotes]);
 
     const nextRandomQuote = () => {
       const getRandomQuote = randomQuote();
       setQuote({...quote, ...getRandomQuote});
     }
 
-    return props.isLoading ? <h1> Loading... </h1> : 
+    return isLoading ? <h1> Loading... </h1> : 
       <>
         <blockquote id="text">
           <p>{quote.text}</p>
