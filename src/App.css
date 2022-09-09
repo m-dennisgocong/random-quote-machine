@@ -1,0 +1,12 @@
+#root { 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#quote-box{
+    padding: 0.5em;
+    margin: 0 auto;
+    width: 70%;
+    min-width: 320px;
+    background-color: pink;
+    border-radius: 1.5em;
+}
