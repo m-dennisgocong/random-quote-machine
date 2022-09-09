@@ -1,0 +1,28 @@
+#text{
+    padding: 0.5em;
+    margin: 0.5em;
+    line-height: 1.5em;
+    font-size: 1.5rem;
+}
+#text p{
+    margin-bottom: 0.5em;
+}
+#text #author{
+    display: block;
+    text-align: right; 
+}
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.5em 1.5em;
+}
+#tweet-quote i{
+    display: inline;
+    font-size: 1.5em;
+}
+#new-quote{
+    font-size: 1.5em;
+}
+
+
