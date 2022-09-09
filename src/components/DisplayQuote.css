@@ -3,26 +3,29 @@
     margin: 0.5em;
     line-height: 1.5em;
     font-size: 1.5rem;
+    text-align: justify;
 }
 #text p{
     margin-bottom: 0.5em;
 }
 #text #author{
     display: block;
-    text-align: right; 
+    text-align: right;
+    font-size: 1.3rem; 
 }
 .buttonContainer{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 0.5em 1.5em;
+    padding: 0.5em 1em 0;
 }
 #tweet-quote i{
-    display: inline;
+    display: inline-block;
     font-size: 1.5em;
 }
 #new-quote{
     font-size: 1.5em;
+    cursor: pointer;
 }
 
 
