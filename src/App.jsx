@@ -4,24 +4,23 @@ import DisplayQuote from './components/DisplayQuote';
 import './App.css';
 
 const App = () => {
-
-  const [quotes, setQuotes] = useState([]);
+  const [randomQuote, setRandomQuotes] = useState({});
   const [isLoading, setLoading] = useState(true);
 
+  const fetchQuote = async () => {
+    const result = await axios(`https://api.quotable.io/random`) 
+    setRandomQuotes(result.data);
+    setLoading(false);
+  }
+
   useEffect(() => {
-    const fetchQuote = async () => {
-      const result = await axios(`https://type.fit/api/quotes`) 
-      // console.log(result.data);
-      setQuotes(result.data);
-      setLoading(false);
-    }
     fetchQuote();
     },[]);
-
+  
   return (
     <div className="App">
       <main id="quote-box">
-        <DisplayQuote quotes={quotes} isLoading={isLoading} />
+        <DisplayQuote randomQuote={randomQuote} isLoading={isLoading} fetchQuote={fetchQuote} />
       </main>
     </div>
   )
