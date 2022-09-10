@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from "react";
-import './DisplayQuote.css'
+import './DisplayQuote.css';
 
 const DisplayQuote = ({randomQuote, isLoading, fetchQuote}) => {
 
