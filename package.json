@@ -1,12 +1,12 @@
 {
-  "homepage": "http://m-dennisgocong.github.io/random-quote-machine",  
+  "homepage": "http://m-dennisgocong.github.io/random-quote-machine",
   "name": "random-quote-machine",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy" : "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview"
@@ -22,5 +22,17 @@
     "@vitejs/plugin-react": "^2.1.0",
     "gh-pages": "^4.0.0",
     "vite": "^3.1.0"
-  }
+  },
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-dennisgocong/random-quote-machine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-dennisgocong/random-quote-machine/issues"
+  },
+  "description": ""
 }
