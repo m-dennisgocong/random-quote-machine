@@ -1,31 +1,24 @@
 import React,{useEffect, useState} from "react";
 import './DisplayQuote.css'
 
-const DisplayQuote = ({quotes, isLoading}) => {
+const DisplayQuote = ({randomQuote, isLoading, fetchQuote}) => {
 
-    const randomQuote = () => quotes[(Math.floor(Math.random() * quotes.length) + 1)];
-    const [quote,setQuote] = useState({quote : "", author : ""});
+  const [quote,setQuote] = useState({content : "", author : ""});
 
-    useEffect(() => {
-      const getRandomQuote = randomQuote();
-      setQuote({...quote, ...getRandomQuote});      
-    },[quotes]);
+  useEffect(() => {
+    setQuote({...quote, ...randomQuote});      
+  },[randomQuote]);
 
-    const nextRandomQuote = () => {
-      const getRandomQuote = randomQuote();
-      setQuote({...quote, ...getRandomQuote});
-    }
-
-    return isLoading ? <h1> Loading... </h1> : 
-      <>
-        <blockquote id="text">
-          <p><q>{quote.text}</q> </p>
-          <cite id="author">- {quote.author}</cite>
-        </blockquote>
-        <div className="buttonContainer">
-          <a id="tweet-quote" href={'https://twitter.com/intent/tweet?hashtags=quotes&text='+encodeURIComponent('"'+quote.text+'" - '+quote.author)} target="_top" className="shareTweet"><i class="fa fa-twitter" title="Share to Twitter!"></i></a>
-          <a onClick={nextRandomQuote} id="new-quote"><i class="fa fa-random" aria-hidden="true" title="New Random Quote"></i></a>
-        </div>
-      </>
+  return isLoading ? <h1> Loading... </h1> : 
+  <>
+    <blockquote id="text">
+      <p><q>{quote.content}</q> </p>
+      <cite id="author">- {quote.author}</cite>
+    </blockquote>
+    <div className="buttonContainer">
+      <a id="tweet-quote" href={'https://twitter.com/intent/tweet?hashtags=quotes&text='+encodeURIComponent('"'+quote.content+'" - '+quote.author)} target="_top" className="shareTweet"><i className="fa fa-twitter" title="Share to Twitter!"></i></a>
+      <a onClick={fetchQuote} id="new-quote"><i className="fa fa-random" aria-hidden="true" title="New Random Quote"></i></a>
+    </div>
+  </>
 }
 export default DisplayQuote;
