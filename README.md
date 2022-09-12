@@ -9,8 +9,8 @@ Live Demo: https://m-dennisgocong.github.io/random-quote-machine/
 ## Features
 
 * On first load display a random quote with the author's name
-* Easily share the current quote to Twitter with your freinds  
-* Request new random quote
+* Easily share the current quote to Twitter with your friends  
+* Request new a random quote
 
 ## Tech Stack
 
@@ -30,10 +30,8 @@ This is one of my project for [Front End Development Libraries](https://www.free
 
 ## Problems Encountered 
 
-For this project, I mainly use React library using React Hooks however The React course on freeCodeCamp mainly focus on using Class Components which it's not within freeCodeCamp course preview so basically I have to do my own thing, learning from documentation and watching a lot of youtube tutorial. 
-
-Learning how to use Class Component first from freeCodeCamp made me appreciate React Hooks. The reason I implement Hooks because it's easy and fast to implement.  
-
+For this project, I mainly use React library using React Hooks however the React course on freeCodeCamp mainly focus on using Class Components which it's not within course scope so basically I have to do my own thing, learning from documentation and watching a lot of youtube tutorial. 
+ 
 ## Run Locally
 
 After you clone this repo to your desktop, go to its root directory and run `npm install` to install its dependencies.
