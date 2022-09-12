@@ -4,9 +4,7 @@
 
 A simple random quote generator created with Reactjs and [Quotable](https://github.com/lukePeavey/quotable) API
 
-## Live Demo
-
-https://m-dennisgocong.github.io/random-quote-machine/
+Live Demo: https://m-dennisgocong.github.io/random-quote-machine/
 
 ## Features
 
@@ -25,16 +23,16 @@ https://m-dennisgocong.github.io/random-quote-machine/
 ## General Info
 
 This is one of my project for [Front End Development Libraries](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/) on freeCodeCamp course. The purpose of this challenge is to apply what we learn, to test out and showcase front end skills.
-        
+
+## Screenshots
+<img src = "./public/screenshot/random-quote-machine.png">
+<img src = "./public/screenshot/random-quote-machine-mobile.png">
+
 ## Problems Encountered 
 
-For this project, I mainly use React library using React Hooks however The React course on freeCodeCamp mainly focus on using Class Components which it's not within freeCodeCamp course preview so basically I have to do my own thing, learning from documenation and watching a lot of tutorial from youtube. 
+For this project, I mainly use React library using React Hooks however The React course on freeCodeCamp mainly focus on using Class Components which it's not within freeCodeCamp course preview so basically I have to do my own thing, learning from documentation and watching a lot of youtube tutorial. 
 
-The reason I implement using React Hooks because it's easy and fast to implement. It was an easy transition learning React Hooks since freeCodeCamp course is focus mainly on Class Component it made me appreciate React Hooks.  
-
-## Setup
-
-Clone this repo to your desktop and run `npm install` to install all the dependencies.
+Learning how to use Class Component first from freeCodeCamp made me appreciate React Hooks. The reason I implement Hooks because it's easy and fast to implement.  
 
 ## Run Locally
 
