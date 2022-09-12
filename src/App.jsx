@@ -4,6 +4,7 @@ import DisplayQuote from './components/DisplayQuote';
 import './App.css';
 
 const App = () => {
+
   const [randomQuote, setRandomQuotes] = useState({});
   const [isLoading, setLoading] = useState(true);
 
@@ -12,7 +13,7 @@ const App = () => {
     setRandomQuotes(result.data);
     setLoading(false);
   }
-
+  
   useEffect(() => {
     fetchQuote();
     },[]);
@@ -20,7 +21,7 @@ const App = () => {
   return (
     <div className="App">
       <main id="quote-box">
-        <DisplayQuote randomQuote={randomQuote} isLoading={isLoading} fetchQuote={fetchQuote} />
+        { isLoading ? <h1> LOADING... </h1> : <DisplayQuote randomQuote={randomQuote} fetchQuote={fetchQuote}/> }
       </main>
     </div>
   )
