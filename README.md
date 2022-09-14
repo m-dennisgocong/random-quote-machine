@@ -30,7 +30,7 @@ This is one of my project for [Front End Development Libraries](https://www.free
 
 ## Problems Encountered 
 
-For this project, I mainly use React library using React Hooks however the React course on freeCodeCamp mainly focus on using Class Components which it's not within course scope so basically I have to do my own thing, learning from documentation and watching a lot of youtube tutorial. 
+For this project, I mainly use React library using React Hooks however the React course on freeCodeCamp mainly focus on using Class Components so basically I have to do my own research on how to use it, learning from documentation and watching a lot of youtube tutorial. 
  
 ## Run Locally
 
