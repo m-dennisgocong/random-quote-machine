@@ -3,12 +3,17 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root{
+  --main-bg-color: #D7CEC7;
+  --quote-card-color: #ffffff;
+  --quote-card-shadow-color: #aaaaaa;
+}
 body {
   margin: 0;
   display: grid;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #D7CEC7;
+  background-color: var(--main-bg-color);
 }
 
