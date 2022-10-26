@@ -19,11 +19,13 @@ const App = () => {
     },[]);
   
   return (
-    <div className="App">
-      <main id="quote-box">
-        { isLoading ? <h1> LOADING... </h1> : <DisplayQuote randomQuote={randomQuote} fetchQuote={fetchQuote}/> }
-      </main>
-    </div>
+    <>
+        { isLoading ? <h1> LOADING... </h1> : 
+          <main id="quote-box">
+            <DisplayQuote randomQuote={randomQuote} fetchQuote={fetchQuote}/> 
+          </main>
+        }
+    </>  
   )
 }
 
