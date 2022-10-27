@@ -20,11 +20,12 @@ const App = () => {
   
   return (
     <>
-        { isLoading ? <h1> LOADING... </h1> : 
-          <main id="quote-box">
-            <DisplayQuote randomQuote={randomQuote} fetchQuote={fetchQuote}/> 
-          </main>
-        }
+      { 
+        isLoading ? <div id="LOADING"></div> : 
+        <main id="quote-box">
+          <DisplayQuote randomQuote={randomQuote} fetchQuote={fetchQuote}/> 
+        </main>
+      }
     </>  
   )
 }
