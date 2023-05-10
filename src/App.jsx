@@ -26,6 +26,9 @@ const App = () => {
           <DisplayQuote randomQuote={randomQuote} fetchQuote={fetchQuote}/> 
         </main>
       }
+      <footer>
+        <a href="https://github.com/m-dennisgocong/random-quote-machine"><img src="./src/icons/github-mark.svg" alt="" />Dennis Goc-ong</a>
+      </footer>
     </>  
   )
 }
