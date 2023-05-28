@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import DisplayQuote from './components/DisplayQuote';
+import githubLogo from './icons/github-mark.svg';
 import './App.css';
 
 const App = () => {
@@ -27,7 +28,7 @@ const App = () => {
         </main>
       }
       <footer>
-        <a href="https://github.com/m-dennisgocong/random-quote-machine"><img src="./src/icons/github-mark.svg" alt="" />Dennis Goc-ong</a>
+        <a href="https://github.com/m-dennisgocong/random-quote-machine"><img src={githubLogo} alt="" />Dennis Goc-ong</a>
       </footer>
     </>  
   )
